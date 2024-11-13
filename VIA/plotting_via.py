@@ -369,7 +369,7 @@ def plot_scatter(embedding: ndarray, labels: list, cmap='rainbow', s=5, alpha=0.
     :return: matplotlib pyplot fig, ax
     '''
     fig, ax = plt.subplots()
-    if (isinstance(labels[0], str)) == True:
+    if isinstance(labels[0], str):
         categorical = True
     else:
         categorical = False
